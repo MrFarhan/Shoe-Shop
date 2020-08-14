@@ -124,3 +124,64 @@
 * {
   box-sizing: border-box;
 } */
+
+
+.carousel-inner img {
+  width: 80%wv;
+  height: 80%hv;
+  padding: 1em;
+  align-items: center;
+  justify-content: center;
+  /* margin-left: 14em; */
+
+}
+
+.card {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.card:hover {opacity: 1}
+
+
+.centerText{
+  position: absolute;
+  padding: 6em;
+  font-family: 'Anton', sans-serif;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font: 10em;
+  margin-top: 2em;
+}
+
+.centerText :hover{
+  position: absolute;
+  /* padding: 6em; */
+  font-weight: bold;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  width: 100%wv;
+  align-items: center;
+  justify-content: center;
+  background-color: lightslategrey;
+}
+
+
+.footersocial{
+  align-items: center;
+  justify-content: center;
+  /* display: block; */
+  /* position: relative; */
+}
