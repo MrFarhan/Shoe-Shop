@@ -7,19 +7,13 @@ import Typography from '@material-ui/core/Typography';
 import SearchIcon from '@material-ui/icons/Search';
 import {
     BrowserRouter as Router,
-    Routes,
-    Route,
     Link,
-    Outlet,
-    useParams
+
 } from "react-router-dom";
 
 
 import "../App.css";
-import App from '../App';
-import { MenShoesDetails } from './MenShoesDetails';
-import { MensShoesIndex } from './MensShoesIndex';
-import { MenShoes } from './MenShoes';
+
 
 const useStyles = makeStyles((theme) => ({
     grow: {
@@ -85,9 +79,9 @@ export default function Header() {
                                 <div className="row">
                                     <div className="column">
                                         <h6>Man</h6>
-                                        <Link to="/shoes" >  Shoes</Link>
-                                        <Link to="/shoes" >Sports</Link>
-                                        <Link to="/shoes" >Sandals</Link>
+                                        <Link to="/menshoes" >  Shoes</Link>
+                                        <Link to="/" >Sports</Link>
+                                        <Link to="/" >Sandals</Link>
                                     </div>
                                     <div className="column">
                                         <h6>Women</h6>
@@ -102,7 +96,7 @@ export default function Header() {
                             Find Store
                     </Typography>
                         <div className={classes.logo}>
-                            <img src={`http://pakkapapita.com/servis/wp-content/uploads/2017/09/servis-logo-resized.png`} />
+                            <img src={`http://pakkapapita.com/servis/wp-content/uploads/2017/09/servis-logo-resized.png`} alt="Logo"/>
                         </div>
                         <div className={classes.grow} />
                         <div className={classes.sectionDesktop}>

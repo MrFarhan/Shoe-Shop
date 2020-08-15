@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import YouTubeIcon from '@material-ui/icons/YouTube';
@@ -6,6 +6,7 @@ import '../App.css'
 
 export default function Footer () {
     return (
+        <div className="footerhead">
         <div className="footer">
             <div className="footersocial">Copyrights 2020 © Farhan</div>
             <br/>
@@ -16,6 +17,7 @@ export default function Footer () {
                 <YouTubeIcon/>
 
             </div>
+        </div>
         </div>
     )
 }

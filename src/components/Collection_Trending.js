@@ -41,9 +41,9 @@ export function Collection_Trending  () {
                 </div>
             </div>
 
-            <br />
+            {/* <br />
             <span>Latest Collection </span>
-            <br />
+            <br /> */}
 
 
         </div>

@@ -1,11 +1,12 @@
 import React from 'react'
-import Header from './Header'
+import { Outlet } from 'react-router-dom'
 
 export function MenShoes  () {
     return (
         <div>
-            {/* <Header/> */}
-            Mens Shoes Here
+            <h1>Mans Shoes here</h1>
+            <hr/>
+            <Outlet/>
         </div>
     )
 }
