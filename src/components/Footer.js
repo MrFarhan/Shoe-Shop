@@ -4,7 +4,7 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import '../App.css'
 
-export const Footer = () => {
+export default function Footer () {
     return (
         <div className="footer">
             <div className="footersocial">Copyrights 2020 © Farhan</div>

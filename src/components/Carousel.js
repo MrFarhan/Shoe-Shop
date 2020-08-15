@@ -1,6 +1,6 @@
 import React from 'react'
 import "../App.css";
-export const Carousel = () => {
+export function Carousel () {
     return (
         <div>
 
@@ -24,7 +24,7 @@ export const Carousel = () => {
                     </div>
                 </div>
 
-                <a className="carousel-control-prev" href="#demo" data-slide="prev">
+                <a  href="#demo" data-slide="prev">
                     <span className="carousel-control-prev-icon"></span>
                 </a>
                 <a className="carousel-control-next" href="#demo" data-slide="next">

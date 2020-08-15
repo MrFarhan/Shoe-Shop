@@ -5,7 +5,21 @@ import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import SearchIcon from '@material-ui/icons/Search';
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    Link,
+    Outlet,
+    useParams
+} from "react-router-dom";
+
+
 import "../App.css";
+import App from '../App';
+import { MenShoesDetails } from './MenShoesDetails';
+import { MensShoesIndex } from './MensShoesIndex';
+import { MenShoes } from './MenShoes';
 
 const useStyles = makeStyles((theme) => ({
     grow: {
@@ -55,67 +69,69 @@ const useStyles = makeStyles((theme) => ({
 export default function Header() {
     const classes = useStyles();
     return (
-        <div className={classes.grow}>
-            <AppBar position="flex" style={{ backgroundColor: "white" }}>
-                <Toolbar >
-                    <Typography className={classes.title} variant="h6" >
-                        Home
-                    </Typography>
-                    <div className="dropdown">
-                        <Typography className="dropbtn" className={classes.title} variant="h6" >
-                            Browse Products {" "}
-                            <i className="fa fa-caret-down"></i>
+        <>
+            <div className={classes.grow}>
+                <AppBar position="flex" style={{ backgroundColor: "white" }}>
+                    <Toolbar >
+                        <Typography className={classes.title} variant="h6" >
+                            <Link to="/" > Home</Link>
                         </Typography>
-                        <div className="dropdown-content">
-                            <div className="row">
-                                <div className="column">
-                                    <h6>Man</h6>
-                                    <a href="">Shoes</a>
-                                    <a href="">Sports</a>
-                                    <a href="">Sandals</a>
-                                </div>
-                                <div className="column">
-                                    <h6>Women</h6>
-                                    <a href="">Flat</a>
-                                    <a href="">Sports</a>
-                                    <a href="">Sandals</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <Typography className={classes.title} variant="h6"  >
-                        Find Store
-                    </Typography>
-                    <div className={classes.logo}>
-                        <img src={`http://pakkapapita.com/servis/wp-content/uploads/2017/09/servis-logo-resized.png`} />
-                    </div>
-                    <div className={classes.grow} />
-                    <div className={classes.sectionDesktop}>
-                        <div className="dropdownabs">
-                            <Typography className="dropbtnabs" className={classes.title} variant="h6" >
-                                About Us {" "}
+                        <div className="dropdown">
+                            <Typography className="dropbtn" className={classes.title} variant="h6" >
+                                Browse Products {" "}
                                 <i className="fa fa-caret-down"></i>
                             </Typography>
-                            <div className="dropdown-contentabs">
-                                <a href="#">About our service</a>
-                                <a href="#">About our team</a>
+                            <div className="dropdown-content">
+                                <div className="row">
+                                    <div className="column">
+                                        <h6>Man</h6>
+                                        <Link to="/shoes" >  Shoes</Link>
+                                        <Link to="/shoes" >Sports</Link>
+                                        <Link to="/shoes" >Sandals</Link>
+                                    </div>
+                                    <div className="column">
+                                        <h6>Women</h6>
+                                        <Link to="" >Flat</Link>
+                                        <Link to="" >Sports</Link>
+                                        <Link to="" >Sandals</Link>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-                        <Typography className={classes.title} variant="h6" >
-                            Contact US
+                        <Typography className={classes.title} variant="h6"  >
+                            Find Store
                     </Typography>
-                        <IconButton
-                            edge="end"
-                            aria-label="Search for products"
-                            color="black"
-                        >
-                            <SearchIcon />
-                        </IconButton>
-                    </div>
-                   
-                </Toolbar>
-            </AppBar>
-        </div>
+                        <div className={classes.logo}>
+                            <img src={`http://pakkapapita.com/servis/wp-content/uploads/2017/09/servis-logo-resized.png`} />
+                        </div>
+                        <div className={classes.grow} />
+                        <div className={classes.sectionDesktop}>
+                            <div className="dropdownabs">
+                                <Typography className="dropbtnabs" className={classes.title} variant="h6" >
+                                    About Us {" "}
+                                    <i className="fa fa-caret-down"></i>
+                                </Typography>
+                                <div className="dropdown-contentabs">
+                                    <a href="#">About our service</a>
+                                    <a href="#">About our team</a>
+                                </div>
+                            </div>
+
+                            <Typography className={classes.title} variant="h6" >
+                                Contact US
+                    </Typography>
+                            <IconButton
+                                edge="end"
+                                aria-label="Search for products"
+                                color="black"
+                            >
+                                <SearchIcon />
+                            </IconButton>
+                        </div>
+
+                    </Toolbar>
+                </AppBar>
+            </div>
+        </>
     );
 }

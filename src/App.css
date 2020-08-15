@@ -2,13 +2,6 @@
    background-color: aliceblue;
  }
  
- /* .headermine{
-  background-color: antiquewhite;
-  width: auto;
-  height: 10em;
-} */
-
-
 .dropbtnabs {
   background-color: #4CAF50;
   color: white;
@@ -44,12 +37,6 @@
 
 .dropdownabs:hover .dropbtnabs {background-color: #ddd;}
  
-
-
-
-
-
-
 .dropdown {
   position: relative;
   display: inline-block;
@@ -61,8 +48,6 @@
   padding: 16px;
   font-size: 16px;
   border: none;
-  
-  
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
@@ -77,13 +62,6 @@
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 
-
-  /* background-color: white;
-  display: none;
-  position: absolute; */
-  /* left: 0; */
-  /* box-shadow: 0px 8px 16px 0px ; */
-  /* z-index: 100; */
 }
 
 
@@ -91,19 +69,16 @@
   display: block;
 }
 
-/* Create three equal columns that floats next to each other */
+/* Create two equal columns that floats next to each other */
 .column {
   float: left;
-  /* width: 20wv; */
   width: 50%;
   padding: 12px;
   background-color: #f1f1f1;
   color: black;
-  /* height: 250px; */
 }
 
 .column a {
-  /* margin-left: 1em; */
   float: none;
   color: black;
   padding: 12px 16px;
@@ -137,11 +112,11 @@
     height: auto;
   }
 }
-/* 
-* {
-  box-sizing: border-box;
-} */
 
+.carousel-inner a {
+  width: 5px;
+  color: black;
+}
 
 .carousel-inner img {
   width: 80%wv;
@@ -149,8 +124,6 @@
   padding: 1em;
   align-items: center;
   justify-content: center;
-  /* margin-left: 14em; */
-
 }
 
 .card {
@@ -183,7 +156,6 @@
 
 .centerText :hover{
   position: absolute;
-  /* padding: 6em; */
   font-weight: bold;
 }
 
@@ -201,6 +173,39 @@
 .footersocial{
   align-items: center;
   justify-content: center;
-  /* display: block; */
-  /* position: relative; */
+
 }
+
+.collection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  width: 50%wv;
+}
+
+.collectionText{
+justify-content: center;
+align-items: center;
+/* margin-left: 40%; */
+padding: 1em;
+}
+
+.collectionHeading{
+margin-left: 40%;
+padding: 0em;
+
+}
+
+
+.collection br {
+  display: block;
+  -ms-flex: 1;
+  flex: 1;
+  height: 2px;
+  opacity: .1;
+  background-color: currentColor;}
+
+
+
