@@ -158,16 +158,19 @@
   font-weight: bold;
 }
 
+
 .footer{
-  display: flex;
-  flex-direction: column;
+  position: absolute;
+  /* display: flex;
+  flex-direction: column; */
   height: 80px;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   background-color: lightslategrey;
   position:absolute;
-   bottom:0;
+  bottom:0; 
    width: 100%;
+   z-index: -1;
 }
 
 
